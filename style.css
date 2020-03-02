@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'MaelstromTest-Bold';
+    src: url('font/MaelstromTest-Bold.otf') format('otf'),
+         url('font/MaelstromTest-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'buffonthin';
+    src: url('font/buffon-thin-webfont.woff2') format('woff2'),
+         url('font/buffon-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "CircledNumbers DB"; 
+	src: url('font/CircledNumbers-Regular DB.woff') format('woff'),
+		 url('font/CircledNumbers-Regular DB.eot') format('eot'),
+		 url('font/CircledNumbers-Regular DB.otf') format('otf');
+		}
+
+body{
+	margin:20px;
+	background:red;
+    animation:myfirst 200s;
+  	-moz-animation:myfirst 200s infinite; /* Firefox */
+	-webkit-animation:myfirst 200s infinite; /* Safari and Chrome */
+  }
+
+  @-moz-keyframes myfirst /* Firefox */
+{
+  0%    {background-color: #A1489B;}
+  5%    {background-color: #E8C8E9;}
+  10%   {background-color: #FCB5C5;}
+  15%   {background-color: #F43BB8;}
+  20%   {background-color: #EF404A;}
+  25%   {background-color: #FA6900;}
+  30%   {background-color: #F7941E;}
+  35%   {background-color: #FFCB05;}
+  40%   {background-color: #FFFEAE;}
+  45%   {background-color: #C8D383;}
+  50%   {background-color: #A6C885;}
+  55%   {background-color: #01AC88;}
+  60%   {background-color: #007F79;}
+  65%   {background-color: #00A4A8;}
+  70%   {background-color: #0066B3;}
+  75%   {background-color: #008ED1;}
+  80%   {background-color: #609CCF;}
+  85%   {background-color: #A1D4E5;}
+  90%   {background-color: #B0B8C1;}
+  95%   {background-color: #B09DC1;}
+  100%  {background-color: #A1489B;}
+}
+ 
+    @-webkit-keyframes myfirst /* Firefox */
+{
+  0%    {background-color: #A1489B;}
+  5%    {background-color: #E8C8E9;}
+  10%   {background-color: #FCB5C5;}
+  15%   {background-color: #F43BB8;}
+  20%   {background-color: #EF404A;}
+  25%   {background-color: #FA6900;}
+  30%   {background-color: #F7941E;}
+  35%   {background-color: #FFCB05;}
+  40%   {background-color: #FFFEAE;}
+  45%   {background-color: #C8D383;}
+  50%   {background-color: #A6C885;}
+  55%   {background-color: #01AC88;}
+  60%   {background-color: #007F79;}
+  65%   {background-color: #00A4A8;}
+  70%   {background-color: #0066B3;}
+  75%   {background-color: #008ED1;}
+  80%   {background-color: #609CCF;}
+  85%   {background-color: #A1D4E5;}
+  90%   {background-color: #B0B8C1;}
+  95%   {background-color: #B09DC1;}
+  100%  {background-color: #A1489B;}
+}
+
+h1 {
+	font-family: 'MaelstromTest-Bold', serif;
+	font-size: 170px;
+	letter-spacing: 5px;
+	color: black;
+}
+h3 {
+	font-family: 'MaelstromTest-Bold', serif;
+	font-size: 55px;
+	letter-spacing: 3px;
+	margin-top: -35px;
+	color: black;
+}
+.jumbotron {
+	background: transparent;
+}
+a.btnstyle {
+	border: 2.25px solid black;
+	background: transparent;
+	font-size: 55px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-family: 'buffonthin', serif;
+	font-size: 55px;
+	font-weight: 500;
+	color: black;
+	-webkit-text-stroke-width: 1px;
+}
+a:hover.btnstyle {
+	border: 2.25px solid orange;
+	text-decoration: none;
+	color: orange;
+	-webkit-text-stroke-width: 1px;
+}
+.footer {
+	font-family: 'buffonthin', serif;
+	font-size: 15px;
+	-webkit-text-stroke-width: 1px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: black;
+}
+.footer a {
+	color: black;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+.footer a:hover {
+	text-decoration: none;
+	color: orange;
+}
+.two {
+	font-family: 'CircledNumbers DB', serif;
+	font-size: 45px;
+}
+.fa-heart {
+	font-size: 35px;
+	font-weight: lighter;
+}
+.list {
+	font-family: 'buffonthin', serif;
+	font-size: 55px;
+	-webkit-text-stroke-width: 1px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	line-height: 55px;
+	margin-top: -40px;
+}
+.list a {
+	color: black;
+}
+.list a img {
+	display: none;
+	text-decoration: none;
+}
+.list a:hover img {
+	display: block;
+	position: absolute;
+	width: 350px;
+}
+.list a:hover {
+	color: orange;
+	text-decoration: none;
+}
+@media (max-width: 1030px) {
+	h1 {
+		font-size: 120px;
+		letter-spacing: 2px;
+	}
+	h3 {
+		font-size: 50px;
+		letter-spacing: 2px;
+		margin-top: -15px;
+	}
+}
+@media (max-width: 500px) {
+	body {
+		margin: 5px;
+	}
+	h1 {
+		font-size: 50px;
+		letter-spacing: 2px;
+	}
+	h3 {
+		font-size: 22px;
+		letter-spacing: 2px;
+		margin-top: -15px;
+	}
+	a.btnstyle {
+		font-size: 25px;
+		border: 1px solid black;
+	}
+	.footer {
+		font-size: 10px;
+		-webkit-text-stroke-width: .5px;
+		letter-spacing: .5px;
+	}
+	.list {
+		font-size: 20px;
+		-webkit-text-stroke-width: 1px;
+		letter-spacing: .1px;
+		line-height: 20px;
+	}
+	.two {
+		font-size: 18px;
+	}
+	.fa-heart {
+		font-size: 15px;
+	}
+}
